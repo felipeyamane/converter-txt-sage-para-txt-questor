@@ -12,5 +12,6 @@ with open(filename) as f:
     for line in f:
         (key, val, val2, val3, val4, val5, val6) = line.split("|")
         d[int(key)] = val, val2, val3, val4, val5, val6
-        #print(line[3:8])
-print(f'{d[1]}')
+        teste = (f'001;0{line[0:5]};{line[6:9]};00000;{line[18:27]};')
+        print(teste)
+#print(f'001;{d}/n')
